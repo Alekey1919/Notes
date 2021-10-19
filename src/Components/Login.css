@@ -1,0 +1,99 @@
+.overlay {
+  position: fixed;
+  display: none;
+  opacity: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.534);
+  transition: opacity 0.3s;
+  backdrop-filter: blur(3px);
+}
+
+.overlay-back {
+  margin: 30px;
+  width: 50px;
+}
+
+.overlay-back > i {
+  font-size: 2rem;
+  color: #e56b6f;
+}
+
+.login {
+  width: 400px;
+  height: 400px;
+  background: #e56b6f;
+  position: absolute;
+  /* top: 150%; */
+  top: 0%;
+  bottom: 0%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border-radius: 5px;
+  border: 1px solid #1f1f1f;
+  padding: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  height: 90%;
+  margin: auto;
+  justify-content: space-around;
+}
+
+.login-inputs {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-inputs > div {
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+input {
+  width: 50%;
+  height: 30px;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #1f1f1f;
+  cursor: none !important;
+}
+
+form > div {
+}
+
+.login-button > button {
+  display: block;
+  margin: 10px auto;
+  border: none;
+  background: none;
+  border-bottom: 1px solid #1f1f1f;
+}
+
+.login-sign-in {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.login-sign-in > button {
+  border: none;
+  border-bottom: 1px solid #1f1f1f;
+  background: none;
+}
+
+.back {
+  width: 20px;
+}
+
+@media (max-width: 420px) {
+  .login {
+    width: 98%;
+  }
+}

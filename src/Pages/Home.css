@@ -1,0 +1,55 @@
+.home > h1 {
+  color: #f8f0fe;
+  text-align: center;
+  margin: 50px;
+}
+
+.home-login {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  color: #f8f0fe;
+}
+
+.log-out {
+  background: none;
+  border: none;
+  color: #f8f0fe;
+}
+
+.logged {
+  display: flex;
+  flex-direction: column;
+}
+
+.notes-list {
+  margin: 50px;
+  display: grid;
+  grid-gap: 2rem;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 400px));
+}
+
+/* LOADING */
+
+.loading > img {
+  position: absolute;
+  width: 200px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+small {
+  color: #e56b6f;
+}
+
+@media (max-width: 650px) {
+  .home-login {
+    position: absolute;
+  }
+}

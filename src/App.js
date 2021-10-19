@@ -1,23 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import Home from "./Pages/Home.js";
+import "./App.css";
 
 function App() {
+  let touch = matchMedia("(hover: none)").matches;
+
+  window.addEventListener("resize", () => {
+    touch = matchMedia("(hover: none)").matches;
+  });
+
+  window.onmousemove = (e) => {
+    if (!touch) {
+      let cursor = document.getElementById("cursor");
+      let x = e.clientX;
+      let y = e.clientY;
+      cursor.style.left = x - 10 + "px";
+      cursor.style.top = y - 10 + "px";
+    }
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div id="cursor"></div>
+      <Home />
     </div>
   );
 }
