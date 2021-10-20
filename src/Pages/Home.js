@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-// import NotesList from "../Components/NotesList";
 import Note from "../Components/Note";
 import AddNote from "../Components/AddNote.js";
 import "./Home.css";

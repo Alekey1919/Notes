@@ -79,7 +79,6 @@ function Note(props) {
     // Update
 
     parentNode.childNodes[6].addEventListener("click", () => {
-      // parentNode.childNodes[0].innerText = titleText;
       parentNode.childNodes[0].innerText =
         parentNode.childNodes[3].firstChild.value;
       parentNode.childNodes[1].innerText =
@@ -105,8 +104,6 @@ function Note(props) {
     });
   };
 
-  const handleCancelUpdate = () => {};
-
   return (
     <div className="note" id={props.id}>
       <h1 className="note-title">{props.title}</h1>
@@ -119,6 +116,9 @@ function Note(props) {
           value={values.title}
           onChange={handleTitleInput}
           required
+          data-gramm="false"
+          data-gramm_editor="false"
+          data-enable-grammarly="false"
         />
       </div>
       <div className="add-note-description original">
@@ -130,6 +130,9 @@ function Note(props) {
           onChange={handleDescriptionInput}
           cols="30"
           rows="10"
+          data-gramm="false"
+          data-gramm_editor="false"
+          data-enable-grammarly="false"
         ></textarea>
       </div>
       <button className="note-cancel-update link none">

@@ -61,6 +61,9 @@ function AddNote(props) {
           value={values.title}
           onChange={handleTitleInput}
           required
+          data-gramm="false"
+          data-gramm_editor="false"
+          data-enable-grammarly="false"
         />
       </div>
       <div className="add-note-description">
@@ -72,6 +75,9 @@ function AddNote(props) {
           onChange={handleDescriptionInput}
           cols="30"
           rows="10"
+          data-gramm="false"
+          data-gramm_editor="false"
+          data-enable-grammarly="false"
         ></textarea>
       </div>
       <p className="note-date">{today}</p>
