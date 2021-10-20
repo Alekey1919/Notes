@@ -49,3 +49,43 @@
   border: none;
   font-size: 1rem;
 }
+
+.note-update {
+  position: absolute;
+  background: none;
+  border: none;
+  font-size: 1rem;
+  top: 10px;
+  right: 10px;
+}
+
+.note-cancel-update {
+  position: absolute;
+  background: none;
+  border: none;
+  font-size: 1rem;
+  top: 10px;
+  right: 10px;
+}
+
+.note-do-update {
+  position: absolute;
+  background: none;
+  border: none;
+  font-size: 1rem;
+  bottom: 10px;
+  right: 10px;
+}
+
+.add-note-title.original,
+.add-note-description.original {
+  display: none;
+}
+
+.none {
+  display: none;
+}
+
+textarea {
+  text-align: center;
+}

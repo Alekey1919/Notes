@@ -78,7 +78,7 @@ function Home() {
     }, 100);
   };
 
-  // ADD / DELETE NOTE
+  // ADD / DELETE / UPDATE NOTE
 
   const addNote = (newNote) => {
     setNotes([...notes, newNote]);
