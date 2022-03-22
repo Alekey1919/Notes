@@ -1,6 +1,8 @@
 ![Preview](./src/images/Preview.png)
 
-###
+### Crud quick notes app with user authentication. ✏🗒
+
+[Visit](https://alekey1919.github.io/Notes/)
 
 # Getting Started with Create React App
 
